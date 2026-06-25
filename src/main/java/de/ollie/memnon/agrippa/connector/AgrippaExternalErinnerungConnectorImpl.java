@@ -88,7 +88,7 @@ public class AgrippaExternalErinnerungConnectorImpl implements ExternalErinnerun
 							.setBezugsdatum(date.toLocalDate())
 							.setNaechsterTermin(date.toLocalDate())
 							.setId(new AgrippaErinnerungId(UUID.randomUUID(), rs.getLong("ID")))
-							.setName("(" + date.toLocalTime() + ")" + rs.getString("DESCRIPTION"))
+							.setName("(" + date.toLocalTime() + ") " + rs.getString("DESCRIPTION"))
 							.setWiederholung(null)
 					);
 				}
